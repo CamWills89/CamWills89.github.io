@@ -71,3 +71,25 @@ header nav ul li a {
     padding: 5px;
 }
 
+/* about me section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.about-me h2 {
+    font-size: 45px;
+    width: 10%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    border-right: solid 3px;
+    padding-right: 15px;
+}
+.about-me p {
+    width: 70%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
