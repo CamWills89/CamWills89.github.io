@@ -50,3 +50,24 @@ header nav ul li a {
     font-weight: bold;
     text-decoration: underline;
 }
+/* hero styles section */
+.hero {
+    background-image: url(/css/images/Background.jpg);
+    padding: 250px 15px 15px 0;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+.hero h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    background-color: rgb(119, 216, 211);
+    color: black;
+    padding: 5px;
+}
+
