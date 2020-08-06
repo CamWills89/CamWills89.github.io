@@ -100,7 +100,7 @@ header nav ul li a {
 }
 
 .about h2 {
-    font-size: 30px;
+    font-size: 45px;
     width: 20%;
     text-align: left;
     display: flex;
@@ -131,6 +131,7 @@ header nav ul li a {
     padding-right: 15px;
     border-right: solid 3px;
     margin: 20px 0;
+    text-decoration: none;
 }
 
 .section-content {
@@ -147,7 +148,7 @@ header nav ul li a {
 }
  .item-1 {
     width: 100%;
-    height: 400px;
+    height: 410px;
     background-image: url(/css/images/run-buddy.PNG);
     background-size: 100% 100%;
     grid-column:  span 2;
@@ -158,7 +159,7 @@ header nav ul li a {
  }
 .item-2 {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-image: url(/css/images/horiseon.PNG);
     background-size: 100% 100%;
     display: flex;
@@ -167,7 +168,7 @@ header nav ul li a {
 }
 .item-3 {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-image: url(/css/images/house.PNG);
     background-size: 100% 100%;
     display: flex;
@@ -176,7 +177,7 @@ header nav ul li a {
 }
 .item-4 {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-image: url(/css/images/fire.PNG);
     background-size: 100% 100%;
     display: flex;
@@ -185,17 +186,21 @@ header nav ul li a {
 }
 .item-5{
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-image: url(/css/images/water.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.grid h3, .grid p {
-    font-size: 18px;
+.grid a {
+    text-decoration: none;
+    color: rgb(106, 122, 158);
+}
+
+.grid h3, .grid p{
     background-color: rgb(119, 216, 211);
-    width: 25%;
+    width: 40%;
 }
 
 /* contact me section styles */
@@ -218,10 +223,97 @@ header nav ul li a {
 .contact-details a {
     text-decoration: none underline;
     color: rgb(106, 122, 158);
-    font-size: 20px;
+    font-size: 16px;
     display: inline-block;
-    margin-left: 10px;
-    padding: 45px 35px;
+    margin-left: 30px;
+    padding: 43px 25px;
     text-align: center;
     font-weight: bold;
+}
+
+/* Mobile responsive section */
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .contact h2 {
+        font-size: 38px;
+    }
+
+    .contact-details a {
+        font-size: 16px;
+        padding: 30px 20px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero img {
+        width: 120px;
+    }
+    .about h2 {
+        font-size: 32px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }   
+    .about {
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .section-title {
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }
+    .section-content {
+        width: 100%;  
+    }
+    .grid {
+        margin: 0;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .contact {
+        justify-content: center;
+        margin: 0;
+    }
+    .contact h2 {
+        font-size: 28px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-details a {
+        font-size: 10px;
+        padding: 10px 10px;
+        margin: 0;
+    }
 }
