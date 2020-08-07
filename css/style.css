@@ -125,6 +125,7 @@ header nav ul li a {
     padding-right: 15px;
     text-shadow: 0 0 10px rgba(24, 23, 23, 0.3);
 }
+
 .about p {
     width: 70%;
     margin-left: 15px;
@@ -163,11 +164,11 @@ header nav ul li a {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
     margin-left: 15px;
-    
+    width: 100%;
+    grid-auto-flow: dense;
 }
 
  .item-1 {
-    width: 100%;
     height: 410px;
     background-image: url(/css/images/run-buddy.PNG);
     background-size: 100% 100%;
@@ -181,7 +182,6 @@ header nav ul li a {
  }
 
 .item-2 {
-    width: 100%;
     height: 200px;
     background-image: url(/css/images/horiseon.PNG);
     background-size: 100% 100%;
@@ -192,7 +192,6 @@ header nav ul li a {
     border: solid 2px var(--primary-color);
 }
 .item-3 {
-    width: 100%;
     height: 200px;
     background-image: url(/css/images/house.PNG);
     background-size: 100% 100%;
@@ -203,7 +202,6 @@ header nav ul li a {
     border: solid 2px var(--primary-color);
 }
 .item-4 {
-    width: 100%;
     height: 200px;
     background-image: url(/css/images/fire.PNG);
     background-size: 100% 100%;
@@ -214,7 +212,6 @@ header nav ul li a {
     border: solid 2px var(--primary-color);
 }
 .item-5 {
-    width: 100%;
     height: 200px;
     background-image: url(/css/images/water.PNG);
     background-size: 100% 100%;
@@ -267,7 +264,26 @@ header nav ul li a {
 }
 
 /* Mobile responsive section */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1400px) {
+    .contact-details a {
+        font-size: 16px;
+        padding: 30px 20px;
+        margin-left: 10px;
+    }
+    .contact {
+        justify-content: center;
+        margin: 0;
+    }
+    .contact h2 {
+        font-size: 28px;
+        flex: 1 100%;
+        border-bottom: solid 3px;
+        border-right: none;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1024px) {
     header {
         padding: 0;
         justify-content: center;
@@ -290,11 +306,6 @@ header nav ul li a {
         font-size: 38px;
     }
 
-    .contact-details a {
-        font-size: 16px;
-        padding: 30px 20px;
-        margin-left: 10px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -334,21 +345,4 @@ header nav ul li a {
         width: 100%;
     }
 
-    .contact {
-        justify-content: center;
-        margin: 0;
-    }
-    .contact h2 {
-        font-size: 28px;
-        flex: 1 100%;
-        border-bottom: solid 3px;
-        border-right: none;
-        text-align: center;
-        justify-content: center;
-    }
-    .contact-details a {
-        font-size: 10px;
-        padding: 10px 10px;
-        margin: 0;
-    }
 }
