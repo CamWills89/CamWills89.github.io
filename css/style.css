@@ -305,7 +305,9 @@ header nav ul li a {
     .contact h2 {
         font-size: 38px;
     }
-
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
