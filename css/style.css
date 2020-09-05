@@ -132,6 +132,7 @@ header nav ul li a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    font-size: 1.4em;
 }
 
 /* work section */
@@ -170,7 +171,7 @@ header nav ul li a {
 
  .item-1 {
     height: 410px;
-    background-image: url(/css/images/run-buddy.PNG);
+    background-image: url(/css/images/Weather-dashboard.PNG);
     background-size: 100% 100%;
     grid-column:  span 2;
     grid-row: span 2;
@@ -183,7 +184,7 @@ header nav ul li a {
 
 .item-2 {
     height: 200px;
-    background-image: url(/css/images/horiseon.PNG);
+    background-image: url(/css/images/run-buddy.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -193,7 +194,7 @@ header nav ul li a {
 }
 .item-3 {
     height: 200px;
-    background-image: url(/css/images/house.PNG);
+    background-image: url(/css/images/horiseon.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -203,7 +204,7 @@ header nav ul li a {
 }
 .item-4 {
     height: 200px;
-    background-image: url(/css/images/fire.PNG);
+    background-image: url(/css/images/Code-Quiz.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -213,7 +214,7 @@ header nav ul li a {
 }
 .item-5 {
     height: 200px;
-    background-image: url(/css/images/water.PNG);
+    background-image: url(/css/images/Scheduler.PNG);
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
